@@ -31,6 +31,9 @@ import { RouteComponent } from './components/routesFolder/route/route.component'
 import { AddUserComponent } from './components/usersFolder/add-user/add-user.component';
 import { UserProfileComponent } from './components/usersFolder/user-profile/user-profile.component';
 import { EditUserComponent } from './components/usersFolder/edit-user/edit-user.component';
+import { ComplaintsComponent } from './components/complaintsFolder/complaints/complaints.component';
+import { ComplaintComponent } from './components/complaintsFolder/complaint/complaint.component';
+import { ComplaintFormComponent } from './components/complaintsFolder/complaint-form/complaint-form.component';
 
 
 @NgModule({
@@ -55,6 +58,9 @@ import { EditUserComponent } from './components/usersFolder/edit-user/edit-user.
     AddUserComponent,
     UserProfileComponent,
     EditUserComponent,
+    ComplaintsComponent,
+    ComplaintComponent,
+    ComplaintFormComponent,
 
 
     

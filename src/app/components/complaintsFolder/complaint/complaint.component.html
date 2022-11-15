@@ -1,0 +1,8 @@
+<div class="container">
+    <p>{{complaint._id}}</p>
+    <p>{{complaint.userComplainted.name}}</p>
+    <p>{{complaint.creator.name}}</p>
+    <p>{{complaint.dayOfCreation}}</p>
+    <p>{{complaint.description}}</p>
+    <button mat-raised-button color="warn" (click)="delete()">Delete</button>
+</div>

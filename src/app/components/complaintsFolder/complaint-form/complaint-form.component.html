@@ -1,0 +1,23 @@
+<form [formGroup]="complaintForm" (ngSubmit)="onSubmit()">
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Name of user creator</mat-label>
+            <input matInput formControlName="creator">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label>User complinted</mat-label>
+            <input matInput formControlName="userComplinted">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Description</mat-label>
+            <input matInput formControlName="Description">
+        </mat-form-field>
+    </p>
+    <p>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!complaintForm.valid">Submit</button>
+      </p>
+</form>

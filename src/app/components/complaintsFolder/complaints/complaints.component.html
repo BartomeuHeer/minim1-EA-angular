@@ -1,0 +1,14 @@
+<div class="container">
+    <div style="margin-bottom: 55px;">
+        <button mat-raised-button color="primary" routerLink="/complaints/create">Add new complaint</button>
+    </div>
+    <ag-grid-angular
+    style="width: 600px; height: 350px; margin-top: 80px;"
+    class="ag-theme-alpine"
+    [rowData]="rowData$"
+    [columnDefs]="colDef"
+    (cellClicked)="onCellClicked($event)"
+    >
+    
+    </ag-grid-angular>
+</div>

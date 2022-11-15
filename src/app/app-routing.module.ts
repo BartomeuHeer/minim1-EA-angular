@@ -19,6 +19,9 @@ import { UserComponent } from './components/usersFolder/user/user.component';
 import { UsersComponent } from './components/usersFolder/users/users.component';
 import { BookingResolver } from './resolver/booking.resolver';
 import { RouteResolver } from './resolver/route.resolver';
+import { ComplaintsComponent } from './components/complaintsFolder/complaints/complaints.component';
+import { ComplaintComponent } from './components/complaintsFolder/complaint/complaint.component';
+import { ComplaintFormComponent } from './components/complaintsFolder/complaint-form/complaint-form.component';
 //import { BookingResolver } from './resolver/booking.resolver';
 
 
@@ -38,6 +41,9 @@ const routes: Routes = [
   {path: "login", component: LogInComponent},
   {path: "bookings/:id", component: BookingComponent, resolve: { bookingData: BookingResolver }},
   {path: "bookings/create",component: BookingFormComponent},
+  {path: "complaints",component: ComplaintsComponent},
+  {path: "complaints/:id",component: ComplaintComponent},
+  {path: "complaints/create",component: ComplaintFormComponent},
   {path: "**", component: PageNotFoundComponent},
   
 
